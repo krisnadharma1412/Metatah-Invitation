@@ -1,5 +1,5 @@
 :root {
-    --pink: #f14e95;
+    --yellow: #f1bd4e;
     --bg: #0a0a0a;
     --shadow: 0 2px 2px rgba(0 0 0 / 0.5);
     
@@ -8,7 +8,7 @@
 body {
     font-size: 1.2rem;
     font-family: 'Work Sans', sans-serif;
-    min-height: 2000px;
+    min-height: 4000px;
 }
 
 .hero::before{
@@ -18,7 +18,9 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url(img/RAR_5288.jpg);
+    background-image: url(img/5288.jpg);
+    background-size: cover;
+    background-position: center;
     z-index: -1;
     filter: grayscale();
 }
@@ -46,13 +48,60 @@ body {
 }
 
 .hero a {
-    color: var(--pink);
+    color: var(--yellow);
     background-color: white;
     box-shadow: var(--shadow);
 }
 
 .hero a:hover {
-    background-color: var(--pink);
+    background-color: var(--yellow);
+}
+
+.mynavbar {
+    background-color: rgba(255, 255, 255, 0.3) !important;
+    backdrop-filter: blur(4px);
+}
+
+.mynavbar .offcanvas {
+    height: 100vh;
+}
+
+.mynavbar .navbar-brand,
+.mynavbar .offcanvas-title {
+    font-family: 'Sacramento', cursive;
+    font-weight: bold;
+} 
+
+.mynavbar .nav-link {
+    text-transform: uppercase;
+}
+
+.home {
+    background-image: url(img/floral2.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    margin-top: -4rem;
+    padding-top: 15rem;
+    padding-bottom: 5rem;
+}
+
+.home h2 {
+    color: var(--yellow);
+    font-family: 'Sacramento';
+    font-size: 5rem;
+    font-weight: bold;
+}
+
+.home h3 {
+    color: #444;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.home p {
+    font-size: 1.1rem;
+    color: #666;
 }
 
 /* Media Query */
@@ -74,6 +123,11 @@ body {
     .simply-countdown > .simply-section {
        padding: 60px;
        margin: 5px;
+    }
+
+    .mynavbar .nav-link {
+        font-size: 2rem;
+        text-align: center;
     }
 }
 /* mobile phone */
