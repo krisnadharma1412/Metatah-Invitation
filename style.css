@@ -17,7 +17,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url(img/floral.jpg);
+  background-image: url(img/floral2.jpg);
   background-size: cover;
   background-position: center;
   z-index: -1;
@@ -78,7 +78,7 @@ body {
 }
 
 .home {
-  background-image: url(img/floral2.jpg);
+  background-image: url(img/floral3.jpg);
   background-size: cover;
   background-position: center;
   min-height: 100vh;
@@ -147,6 +147,7 @@ body {
   font-weight: 300;
 }
 
+
 .gallery,
 .rsvp {
     padding-top: 10rem;
@@ -200,6 +201,7 @@ body {
     border: 1px solid var(--yellow);
 }
 
+/* Footer */
 footer {
     padding: 3rem;
     background-color: var(--yellow);
@@ -222,6 +224,7 @@ footer li {
     margin: 0.5rem;
 }
 
+/* Animasi Icon Audio */
 .audio-icon-wrapper {
     width: 4rem;
     height: 4rem;
@@ -266,6 +269,7 @@ footer li {
     padding: 70px;
   }
 }
+
 /* tablet */
 @media (max-width: 768px) {
   html {
@@ -285,8 +289,9 @@ footer li {
     overflow: hidden;
   }
 }
+
 /* mobile phone */
-@media (max-width: 567px) {
+@media (max-width: 576px) {
   html {
     font-size: 60%;
   }
@@ -303,4 +308,5 @@ footer li {
   .sticky-top {
     overflow: hidden;
   }
+
 }
